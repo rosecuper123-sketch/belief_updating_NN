@@ -1,0 +1,48 @@
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+.uv_cache/
+.pytest_cache/
+
+# ===== Large research artifacts (kept locally, regenerate from scripts) =====
+# Training runs, frozen-test logs, checkpoints
+outputs/runs/
+outputs/outputs_prerun/
+outputs/logs/
+*.pt
+
+# Stan / R posterior draws (single files up to ~1 GB)
+*.rds
+*.RData
+*.rda
+*.###
+analysis/fitting_NN/fits/
+analysis/fitting_NN/data/*.rds
+analysis/fitting_NN/redraw/
+analysis/fitting_NN/sensitivity_test/
+
+# Derived result tables, arrays and figures
+*.npz
+*.csv
+*.png
+*.pdf
+*.log
+*.msgpack
+
+# Result directories (figures / metrics / per-episode outputs)
+analysis/counterfactoral_lr/outputs/
+analysis/fitting_NN/figures/
+analysis/fitting_NN/metrics/
+analysis/prerun_analysis/figures/
+analysis/prerun_analysis/metrics/
+analysis/formal_behav_analysis/figures/
+analysis/formal_behav_analysis/metrics/
+analysis/formal_behav_analysis/outputs/
+
+# ===== OS / editor =====
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
